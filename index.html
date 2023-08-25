@@ -9,9 +9,11 @@
   <title>itsAPizza Parlor</title>
 </head>
 <body>
-  <div id="form-container">
+  <div id="form-check">
     <form id="pizza-form">
       <h2>itsAPizza Parlor</h2>
+
+    <div class="mb-3">
       <label for="classic-pizza"></label>
       <select id="classic-pizza" class="form-control">
         <option value="" disable selected>Classic Pizza</option>
@@ -19,12 +21,46 @@
         <option id="veggie" value="veggie">Veggie</option>
         <option id="pepperoni" value="pepperoni">Pepperoni</option>
       </select>
+    </div>
+    <div class="mb-3">
       <label for="special-pizza"></label>
       <select id="special-pizza" class="form-control">
         <option value="" disable selected>Special Pizza</option>
         <option id="margherita" value="margherita">Margherita</option>
         <option id="meatlover" value="meatlover">Meat Lover</option>
       </select>
+    </div>
+      <br />
+    <div class="mb-3 checkbox-container">
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="extra-cheese" name="extra-cheese" value="extra-cheese">
+      <label class="form-check-label" for="extra-cheese">Extra cheese</label>
+      </div>
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="extra-pepperoni" name="extra-pepperoni" value="extra-pepperoni">
+      <label class="form-check-label" for="extra-pepperoni">Extra pepperoni</label>
+      </div>
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="basil" name="basil" value="basil">
+      <label class="form-check-label" for="basil">Basil $1</label>
+      </div>
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="olive-oil" name="olive-oil" value="olive-oil">
+      <label class="form-check-label" for="olive-oil">Olive oil</label>
+      </div>
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="garlic" name="garlic" value="garlic">
+      <label class="form-check-label" for="garlic">Garlic</label>
+      </div>
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="cherry-tomatoes" name="cherry-tomatoes" value="cherry-tomatoes">
+      <label class="form-check-label" for="cherry-tomatoes">Cherry tomatoes</label>
+      </div>
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="onion" name="onion" value="onion">
+      <label class="form-check-label" for="onion">Onions</label>
+      </div>>
+    </div>
       <label for="size"></label>
       <select id="size" class="form-control" required>
         <option value="" disable selected>Size</option>
@@ -32,16 +68,12 @@
         <option id="medium" value="medium">Medium</option>
         <option id="large" value="large">Large</option>
       </select>
-      <input type="checkbox" id="extra-cheese" name="extra-cheese" value="extra-cheese">
-      <label for="extra-cheese">Extra cheese $1</label>
-      <input type="checkbox" id="extra-pepperoni" name="extra-pepperoni" value="extra-pepperoni">
-      <label for="extra-pepperoni">Extra pepperoni $1</label>
-      <input type="checkbox" id="basil" name="basil" value="basil">
-      <label for="basil">Basil $1</label>
+    </div>
       <br />
       <button type="submit" class="btn btn-primary">Checkout</button>
     </form>
   </div>
+  <div id="price"><p></p></div>
   
 </body>
 </html>

@@ -1,13 +1,9 @@
-html {
-  text-align: center;
+.form-check {
+  width: 250px;
+  margin: auto;
 }
 
 .form-control {
-  margin: auto;
   width: 250px;
-}
-
-.btn {
   margin: auto;
-  width: 250px;
 }
