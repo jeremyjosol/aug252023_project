@@ -10,7 +10,7 @@ Test 2: "It should return the toppings property value of 'cheese'."
 Code: itsAPizza.toppings[0];
 Expected Output: "cheese"
 
-Describe: Pizza.prototype.purchaseClassicPizza();
+Describe: Pizza.prototype.purchaseClassicPizza(size);
 
 Test 1: "If the value of the 'size' property of itsAPizza is 'medium', return true."
 Code: itsAPizza.purchasePizza();
@@ -44,7 +44,7 @@ if (size === "large") {
 pizzaPrice += 5;
 Expected Output: 20
 
-Describe: Pizza.prototype.purchaseSpecialPizza();
+Describe: Pizza.prototype.purchaseSpecialPizza(size);
 
 Test 1: "It should mitigate the previous method from having too many conditions but follow a similar formula structurally."
 let pizzaPrice = 18;
