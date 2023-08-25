@@ -1,9 +1,77 @@
+body {
+  font-family: "Tenor Sans", sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+h6 {
+  font-style: italic;
+  text-align: center;
+  font-size: 10px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h2 {
+  text-align: center;
+}
+
+#pizza-form {
+  margin: auto;
+  margin-top: 15px;
+  background-color: white;
+  width: 500px;
+  border-radius: 50px;
+  height: 525px;
+}
+
 .form-check {
   width: 250px;
   margin: auto;
+  margin-top: 2.5px;
+  margin-bottom: 0;
 }
 
 .form-control {
   width: 250px;
   margin: auto;
+  margin-bottom: 1px;
+}
+
+.btn {
+  width: 250px;
+  margin: auto;
+}
+
+.button {
+  width: 250px;
+  margin: auto;
+}
+
+.mb-3 {
+ padding: auto;
+ padding-top: 1px;
+ padding-bottom: 1px;
+ margin: 1px;
+ margin-top: 1px;
+}
+
+.form-label {
+  margin: auto;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  padding: auto;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
