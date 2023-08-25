@@ -6,8 +6,6 @@ function Pizza(classicPizza, specialPizza, pizzaSize) {
   this.size = pizzaSize;
 }
 
-const itsAPizza = new Pizza(["cheese", "veggie", "pepperoni"], ["margherita", "meatlover"], ["small", "medium", "large"]);
-
 Pizza.prototype.purchaseClassicPizza = function(size) {
   let pizzaPrice = 15;
   
@@ -33,5 +31,9 @@ Pizza.prototype.purchaseSpecialPizza = function(size) {
   }
   return pizzaPrice;
 };
+
+// UI logic
+
+const itsAPizza = new Pizza(["cheese", "veggie", "pepperoni"], ["margherita", "meatlover"], ["small", "medium", "large"]);
 
 
