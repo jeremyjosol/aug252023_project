@@ -20,7 +20,7 @@ Test 2: "If the value of the 'size' property of itsAPizza is 'medium', return th
 Code: itsAPizza.purchasePizza();
 Expected Output: 15
 
-Test 3: "If the value of the 'size' property of itsAPizza is 'medium' and includes the value of the 'toppings' property of 'pepperoni', return pizzaPrice + 3."
+Test 3: "If the value of the 'size' property of itsAPizza is 'medium' and includes the value 'pepperoni' from the 'toppings' property, return pizzaPrice + 3."
 Code: 
 let pizzaPrice = 15;
 if (this.size === "medium" && this.toppings.includes("pepperoni"))
