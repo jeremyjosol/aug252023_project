@@ -34,3 +34,10 @@ let pizzaPrice = 15;
 if (this.toppings.includes("pepperoni") && this.size.includes("medium"))
 return pizzaPrice + 3;
 Expected Output: 18
+
+Test 5: "Rename 'toppings' property as 'classicPizza' and create new property for an array of 'specialPizza'. If 'classicPizza' and 'medium', return pizzaPrice."
+Code:
+let pizzaPrice = 15;
+if (this.classicPizza && this.size.includes("medium"))
+return pizzaPrice + 3;
+Expected Output: 18
