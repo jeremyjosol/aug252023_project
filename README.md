@@ -14,4 +14,8 @@ Describe: Pizza.prototype.purchasePizza();
 
 Test 1: "If the value of the 'size' property of itsAPizza is 'medium', return true."
 Code: itsAPizza.purchasePizza();
-Expected Output "true"
+Expected Output: "true"
+
+Test 2: "If the value of the 'size' property of itsAPizza is 'medium', return the number 15."
+Code: itsAPizza.purchasePizza();
+Expected Output: 15
