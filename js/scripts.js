@@ -1,14 +1,22 @@
 // Business logic
 
-function Pizza(toppings, pizzaSize) {
-  this.toppings = toppings;
+function Pizza(classicPizza, specialPizza, pizzaSize) {
+  this.classicPizza = classicPizza;
+  this.specialPizza = specialPizza;
   this.size = pizzaSize;
 }
 
-const itsAPizza = new Pizza(["cheese", "pepperoni"], ["small", "medium", "large"]);
+const itsAPizza = new Pizza(["cheese", "veggie", "pepperoni"], ["margherita", "meatlover"], ["small", "medium", "large"]);
 
-Pizza.prototype.purchasePizza = function() {
+Pizza.prototype.purchasePizza = function(size) {
   let pizzaPrice = 15;
-  if (this.toppings.includes("pepperoni") && this.size.includes("medium"))
-  return pizzaPrice + 3;
-}
+  
+  if (this.classicPizza && this.size.includes(size)) {
+    if (size === "large") {
+      pizzaPrice += 5;
+    } else if (this.classicPizza && size === "medium") {
+      pizzaPrice += 3;
+    }
+  }
+  return pizzaPrice;
+};
