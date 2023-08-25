@@ -6,6 +6,7 @@ body {
   color: black;
   margin: auto;
   padding: auto;
+  padding-bottom: 25px;
   border: white 20px solid;
 }
 
@@ -33,7 +34,7 @@ h2 {
 
 #pizza-form {
   margin: auto;
-  margin-top: 15px;
+  margin-top: 50px;
   padding: auto;
   padding-bottom: 8px;
   background-color: white;
