@@ -31,6 +31,6 @@ Expected Output: 18
 Test 4: "Turn the 'size' property into an array. If 'toppings' includes 'pepperoni' and 'size' includes 'medium', return pizzaPrice + 3.
 Code:
 let pizzaPrice = 15;
-if (this.size.includes("medium") && this.toppings.includes("pepperoni"))
+if (this.toppings.includes("pepperoni") && this.size.includes("medium"))
 return pizzaPrice + 3;
 Expected Output: 18

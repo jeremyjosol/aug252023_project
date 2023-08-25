@@ -5,10 +5,10 @@ function Pizza(toppings, pizzaSize) {
   this.size = pizzaSize;
 }
 
-const itsAPizza = new Pizza(["cheese", "pepperoni"], "medium");
+const itsAPizza = new Pizza(["cheese", "pepperoni"], ["small", "medium", "large"]);
 
 Pizza.prototype.purchasePizza = function() {
   let pizzaPrice = 15;
-  if (this.size === "medium" && this.toppings.includes("pepperoni"))
+  if (this.toppings.includes("pepperoni") && this.size.includes("medium"))
   return pizzaPrice + 3;
 }
