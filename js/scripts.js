@@ -57,13 +57,11 @@ function handlePizzaFormSubmission(event) {
 
     if (selectClassicPizza) {
       totalPrice = itsAPizza.purchaseClassicPizza(selectSize);
-      console.log("Classic pizza", totalPrice);
       document.getElementById("price").innerText = "Your total is " + "$" + totalPrice;
 
     
     } else if (selectSpecialPizza) {
       totalPrice = itsAPizza.purchaseSpecialPizza(selectSize);
-      console.log("Special pizza", totalPrice);
       document.getElementById("price").innerText = "Your total is " + "$" + totalPrice; 
     }
   }
