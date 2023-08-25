@@ -10,7 +10,7 @@ Test 2: "It should return the toppings property value of 'cheese'."
 Code: itsAPizza.toppings[0];
 Expected Output: "cheese"
 
-Describe: Pizza.prototype.purchasePizza();
+Describe: Pizza.prototype.purchaseClassicPizza();
 
 Test 1: "If the value of the 'size' property of itsAPizza is 'medium', return true."
 Code: itsAPizza.purchasePizza();
@@ -35,9 +35,11 @@ if (this.toppings.includes("pepperoni") && this.size.includes("medium"))
 return pizzaPrice + 3;
 Expected Output: 18
 
-Test 5: "Rename 'toppings' property as 'classicPizza' and create new property for an array of 'specialPizza'. If 'classicPizza' and 'medium', return pizzaPrice."
+Test 5: "Rename 'toppings' property as 'classicPizza' and create new property for an array of 'specialPizza'. If 'classicPizza' and 'large', return pizzaPrice."
 Code:
 let pizzaPrice = 15;
-if (this.classicPizza && this.size.includes("medium"))
-return pizzaPrice + 3;
-Expected Output: 18
+if (this.classicPizza && this.size.includes(size)) {
+if (size === "large") {
+}}
+pizzaPrice += 5;
+Expected Output: 20
