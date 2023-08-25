@@ -8,23 +8,24 @@
 </head>
 <body>
   <div id="form-container">
-    <form id="form">
+    <form id="pizza-form">
       <h2>Classic Pizza</h2>
       <label for="classic-pizza"></label>
       <select id="classic-pizza">
-        <option id="choose-1" value="choose-1">Choose Classic Pizza</option>
+        <option value="" disable selected>Classic Pizza</option>
         <option id="cheese" value="cheese">Cheese</option>
         <option id="veggie" value="veggie">Veggie</option>
         <option id="pepperoni" value="pepperoni">Pepperoni</option>
       </select>
       <label for="special-pizza"></label>
       <select id="special-pizza">
-        <option id="choose-2" value="choose-2">Choose Special Pizza</option>
+        <option value="" disable selected>Special Pizza</option>
         <option id="margherita" value="margherita">Margherita</option>
         <option id="meatlover" value="meatlover">Meat Lover</option>
       </select>
       <label for="size"></label>
-      <select id="size">
+      <select id="size" required>
+        <option value="" disable selected>Size</option>
         <option id="small" value="small">Small</option>
         <option id="medium" value="medium">Medium</option>
         <option id="large" value="large">Large</option>
