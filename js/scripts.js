@@ -4,6 +4,7 @@ function Pizza(classicPizza, specialPizza, pizzaSize) {
   this.classicPizza = classicPizza;
   this.specialPizza = specialPizza;
   this.size = pizzaSize;
+  this.topping = [];
 }
 
 Pizza.prototype.purchaseClassicPizza = function(size) {
@@ -31,6 +32,10 @@ Pizza.prototype.purchaseSpecialPizza = function(size) {
   }
   return pizzaPrice;
 };
+
+Pizza.prototype.addTopping = function(topping) {
+  this.topping.push(topping);
+}
 
 // UI logic
 
