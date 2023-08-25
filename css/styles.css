@@ -1,0 +1,13 @@
+html {
+  text-align: center;
+}
+
+.form-control {
+  margin: auto;
+  width: 250px;
+}
+
+.btn {
+  margin: auto;
+  width: 250px;
+}

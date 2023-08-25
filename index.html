@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="js/scripts.js"></script>
@@ -9,28 +11,35 @@
 <body>
   <div id="form-container">
     <form id="pizza-form">
-      <h2>Classic Pizza</h2>
+      <h2>itsAPizza Parlor</h2>
       <label for="classic-pizza"></label>
-      <select id="classic-pizza">
+      <select id="classic-pizza" class="form-control">
         <option value="" disable selected>Classic Pizza</option>
         <option id="cheese" value="cheese">Cheese</option>
         <option id="veggie" value="veggie">Veggie</option>
         <option id="pepperoni" value="pepperoni">Pepperoni</option>
       </select>
       <label for="special-pizza"></label>
-      <select id="special-pizza">
+      <select id="special-pizza" class="form-control">
         <option value="" disable selected>Special Pizza</option>
         <option id="margherita" value="margherita">Margherita</option>
         <option id="meatlover" value="meatlover">Meat Lover</option>
       </select>
       <label for="size"></label>
-      <select id="size" required>
+      <select id="size" class="form-control" required>
         <option value="" disable selected>Size</option>
         <option id="small" value="small">Small</option>
         <option id="medium" value="medium">Medium</option>
         <option id="large" value="large">Large</option>
       </select>
-      <button type="submit"></button>
+      <input type="checkbox" id="extra-cheese" name="extra-cheese" value="extra-cheese">
+      <label for="extra-cheese">Extra cheese $1</label>
+      <input type="checkbox" id="extra-pepperoni" name="extra-pepperoni" value="extra-pepperoni">
+      <label for="extra-pepperoni">Extra pepperoni $1</label>
+      <input type="checkbox" id="basil" name="basil" value="basil">
+      <label for="basil">Basil $1</label>
+      <br />
+      <button type="submit" class="btn btn-primary">Checkout</button>
     </form>
   </div>
   

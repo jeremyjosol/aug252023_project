@@ -4,11 +4,11 @@ function Pizza(classicPizza, specialPizza, pizzaSize) {
   this.classicPizza = classicPizza;
   this.specialPizza = specialPizza;
   this.size = pizzaSize;
-  this.topping = [];
+  this.toppings = [];
 }
 
 Pizza.prototype.purchaseClassicPizza = function(size) {
-  let pizzaPrice = 15;
+  let pizzaPrice = 15 + this.toppings.length
   
   if (this.classicPizza && this.size.includes(size)) {
     if (size === "large") {
@@ -21,7 +21,7 @@ Pizza.prototype.purchaseClassicPizza = function(size) {
 };
 
 Pizza.prototype.purchaseSpecialPizza = function(size) {
-  let pizzaPrice = 18;
+  let pizzaPrice = 18 + this.toppings.length;
 
   if (this.specialPizza && this.size.includes(size)) {
     if (size === "large") {
@@ -34,11 +34,10 @@ Pizza.prototype.purchaseSpecialPizza = function(size) {
 };
 
 Pizza.prototype.addTopping = function(topping) {
-  this.topping.push(topping);
+  this.toppings.push(topping);
 }
 
 // UI logic
-
 
 function handlePizzaFormSubmission(event) {
   event.preventDefault();
@@ -49,11 +48,20 @@ function handlePizzaFormSubmission(event) {
   if (selectClassicPizza || selectSpecialPizza){
     const itsAPizza = new Pizza(selectClassicPizza, selectSpecialPizza, selectSize);
     
+    const checkToppings = document.querySelectorAll("input[type=checkbox]:checked");
+    checkToppings.forEach(function(topping){
+      itsAPizza.addTopping(topping.value);
+    });
+
+    let totalPrice = 0;
+
     if (selectClassicPizza) {
-      console.log(itsAPizza.purchaseClassicPizza(selectSize));
+      totalPrice = itsAPizza.purchaseClassicPizza(selectSize);
+      console.log("Classic pizza", totalPrice);
     
     } else if (selectSpecialPizza) {
-      console.log(itsAPizza.purchaseSpecialPizza(selectSize));
+      totalPrice = itsAPizza.purchaseSpecialPizza(selectSize);
+      console.log("Special pizza", totalPrice);
     }
   }
 }
