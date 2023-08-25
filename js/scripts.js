@@ -8,3 +8,8 @@ function Pizza(toppings, pizzaSize) {
 const itsAPizza = new Pizza(["cheese", "pepperoni"], "medium");
 
 itsAPizza.toppings[0];
+
+Pizza.prototype.purchasePizza = function() {
+  if (this.size === "medium")
+  return true
+}
