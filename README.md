@@ -47,9 +47,19 @@ Expected Output: 20
 Describe: Pizza.prototype.purchaseSpecialPizza(size);
 
 Test 1: "It should mitigate the previous method from having too many conditions but follow a similar formula structurally."
+Code:
 let pizzaPrice = 18;
 if (this.specialPizza && this.size.includes(size)) {
 if (size === "large) {
 }}
 pizzaPrice += 5;
 Expected Output: 23
+
+Describe: Pizza.prototype.addTopping(topping);
+
+Test 1: "Initialize new Pizza property 'topping' and create an empty array."
+Code:
+itsAPizza.addTopping("basil");
+Expected Output: ["basil"]
+
+
