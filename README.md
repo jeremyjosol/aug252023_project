@@ -43,3 +43,13 @@ if (size === "large") {
 }}
 pizzaPrice += 5;
 Expected Output: 20
+
+Describe: Pizza.prototype.purchaseSpecialPizza();
+
+Test 1: "It should mitigate the previous method from having too many conditions but follow a similar formula structurally."
+let pizzaPrice = 18;
+if (this.specialPizza && this.size.includes(size)) {
+if (size === "large) {
+}}
+pizzaPrice += 5;
+Expected Output: 23
