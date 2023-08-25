@@ -4,7 +4,7 @@
 Jeremy Josol
 
 ## About
-This application features a webpage where a user can select a either a classic or special pizza with the option of additional toppings and depending on the user selection the price is incremented appropriately and outputs on the page. 
+This application features a webpage where a user can select either a classic or special pizza with the option of additional toppings and depending on the user selection the price is incremented appropriately and outputs on the page. 
 
 ## Technologies Used
 * HTML
