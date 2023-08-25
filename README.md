@@ -9,3 +9,9 @@ Expected Output: toppings: ["cheese", "pepperoni"], size: "medium"
 Test 2: "It should return the toppings property value of 'cheese'."
 Code: itsAPizza.toppings[0];
 Expected Output: "cheese"
+
+Describe: Pizza.prototype.purchasePizza();
+
+Test 1: "If the value of the 'size' property of itsAPizza is 'medium', return true."
+Code: itsAPizza.purchasePizza();
+Expected Output "true"
