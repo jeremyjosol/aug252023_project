@@ -7,10 +7,8 @@ function Pizza(toppings, pizzaSize) {
 
 const itsAPizza = new Pizza(["cheese", "pepperoni"], "medium");
 
-itsAPizza.toppings[0];
-
 Pizza.prototype.purchasePizza = function() {
   let pizzaPrice = 15;
-  if (this.size === "medium")
-  return true;
+  if (this.size === "medium" && this.toppings.includes("pepperoni"))
+  return pizzaPrice + 3;
 }
