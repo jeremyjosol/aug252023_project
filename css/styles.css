@@ -84,8 +84,10 @@ h2 {
 }
 
 .btn {
-  width: 250px;
+  width: 150px;
   margin: auto;
+  margin-left: 50px;
+
 }
 
 .btn:hover{
