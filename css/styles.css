@@ -20,9 +20,11 @@ h6 {
   padding-top: 1px;
 }
 
-#nezuko {
+#spongebob {
   margin: auto;
-  margin-left: 120px;
+  margin-left: 44px;
+  width: 225px;
+  height: 70px;
 }
 
 @keyframes gradient {
@@ -63,6 +65,7 @@ h2 {
   margin: auto;
   margin-top: 2.5px;
   margin-bottom: 0;
+  margin-left: 80px;
 }
 
 .form-control {
